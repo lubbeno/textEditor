@@ -15,7 +15,7 @@ public class TextEditorController {
  /*       dostat text z textArea
         dopisat metodu na zapis do suboru.
         Pouzit Bufferedwriter na zapis do dokumentu */
-
+        //nejaka zmena
     }
 
     public void initialize(){
