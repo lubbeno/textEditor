@@ -16,11 +16,20 @@ public class TextEditorController {
         dopisat metodu na zapis do suboru.
         Pouzit Bufferedwriter na zapis do dokumentu */
         //nejaka zmena
+
+        String text = myTextFile.getText();
+        writer1.write(text);
+
     }
 
     public void initialize(){
   /*      Nacitat textovy dokument
          zobrazit v textarea*/
+
+
+
+    }
+    void test(){
 
     }
 

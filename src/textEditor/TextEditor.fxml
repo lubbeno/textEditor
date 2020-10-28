@@ -14,6 +14,6 @@
     <TextArea fx:id="myTextFile"></TextArea>
 </center>
     <bottom>
-        <Button fx:id="save" text="save" onAction="#save" ></Button>
+        <Button fx:id="save" text="save" onAction="#save"></Button>
     </bottom>
 </BorderPane>
