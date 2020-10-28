@@ -58,10 +58,19 @@ public class TextEditorController {
 
         SelectionModel<File> selectionModel = fileList.getSelectionModel();
         selectionModel.selectedItemProperty().addListener((observable, oldValue, newValue) -> {
-
+            String strBuffer;
+            String out="";
             try {
-                viewFile(newValue);
+                BufferedReader bufferedReader = new BufferedReader(new FileReader(newValue));
+                while ((strBuffer = bufferedReader.readLine()) != null) {
+                    out = out + strBuffer + "\n";
+                }
+                myTextFile.setText(out);
+
+               // viewFile(newValue);
             } catch (FileNotFoundException e) {
+                e.printStackTrace();
+            } catch (IOException e) {
                 e.printStackTrace();
             }
         });
